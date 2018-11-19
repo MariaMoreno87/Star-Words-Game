@@ -10,6 +10,7 @@
 
     <title>Maria's Hang Man!</title>
     <style>
+        /* only place where I could find my starwars font ... add it to my body  */
         @font-face {
             font-family: "STARWARS";
             src: url("./assets/fonts/STARWARS.eot?") format("eot"), url("./assets/fonts/STARWARS.woff") format("woff"), url("./assets/fonts/STARWARS.ttf") format("truetype"), url("./assets/fonts/STARWARS.svg#STARWARS") format("svg");
@@ -20,7 +21,7 @@
         body {
             font-family: STARWARS;
         }
-
+        /* like a curtin for my game... the only way to make my sound work & added audio to my body */
         #overlay {
             position: fixed;
             display: none;
@@ -72,12 +73,8 @@
         <source src="./assets/sound/CantinaBand.mp3"></source>
     </audio>
 
-    <div class="container; col-md-12" style="margin-top:30px; padding-bottom:2px;">
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <h1 style="text-align:center;">Star Wars Word Guess Game</h1>
-            </a>
-        </nav>
+    <div class="container; col-md-12" style="padding-top:30px; padding-bottom:2px; background-color:gray;">
+            <h1>Star Wars Word Guess Game</h1>
     </div>
 
 
@@ -97,7 +94,7 @@
                     <span id="losesCount"></span>
                 </div>
                 <div id="word"></div>
-                <div>Try's left:
+                <div>Number of Guesses Remaining:
                     <span id="guesses"></span>
                 </div>
                 <div>Letters Already Guessed</div>

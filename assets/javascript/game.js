@@ -8,7 +8,7 @@ var rounds = 0;
 var playerName = "";
 var totalCorrectWordsGuessed;
 var characterAudio;
-var characterImg;
+var characterImg; 
 var audioCtx;
 var charactersArray = [{ "name": "Chewbacca", "image": "./assets/images/Chewbacca.jpg", "sound": "chewbaccaaudio" },
 { "name": "Jedi", "image": "./assets/images/Jedi.jpg", "sound": "jediaudio" },
@@ -202,7 +202,7 @@ function charValidation(charToValidate) {
 
 document.onkeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
-    if (charValidation(event.keyCode)) {//Check if key is a number or letter
+    if (charValidation(event.keyCode)) {//Check if key is a number or letter event.keycode knows the key numbers
         updateGuesses(letterGuessed);
         didIWin();
     }
