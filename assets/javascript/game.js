@@ -192,7 +192,7 @@ function off() {
     if (rounds == 0) playAudio("introaudio");//plays intro song
 }
 
-//Checks if character passed in is either a number or letter only
+//Checks if character passed in is either a number or letter only..... javascript charcode chart*
 function charValidation(charToValidate) {
     if (charToValidate >= 48 && charToValidate <= 90) {
         return true;//character IS a number or letter
